@@ -11,12 +11,15 @@ const getPosterURL = (posterpath) =>{
 }
 
 
-const MovieCard = ({poster_path, title, data}) => {
+const MovieCard = ({poster_path, title, data, id}) => {
+    
     return(
     
     <div className="movieElement">
+       <a href={id} >
+    
         <img className="indivMovie" src={getPosterURL(poster_path)} onError={replaceImage}  alt={title}/>
-            
+       </a>    
     </div>
     );
 

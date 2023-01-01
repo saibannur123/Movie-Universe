@@ -2,15 +2,15 @@ import './App.css';
 import Axios from "axios";
 import {useEffect, useState} from "react";
 import MovieCard from "./MovieCard";
-import HomePage from "./HomePage"
+import SlideShow from "./SlideShow"
 
 function App() {
 
   const [movieData, setMovieData] = useState([]);
   const [nextPagez, setNextPage] = useState(1);
   const [latest, setLatest] = useState([]);
-  const [latest2, setLatest2] = useState("");
-  
+  const [latest2, setLatest2] = useState(""); 
+ 
 
   useEffect(() => {
     Axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=5733ae936e60b6a387b67aa4e845fcf2&language=en-US&page=${nextPagez}`).then((res) =>{
@@ -39,15 +39,15 @@ function App() {
   return (
     <div className="App">
        
-      <HomePage img={latest} lat={latest2} />
-      <div id="barBelow">
-
-
-      </div>
+      <SlideShow img={latest} lat={latest2} />
+      <div id="barBelow"></div>
+      <input type="search" placeholder="Search for a movie..."/>
+      <button>Search</button> 
       <div className="movieList">
         
       {movieData.map((movie, index ) =>{
-        return <MovieCard key={index} {...movie} />
+        
+        return <MovieCard key={index} {...movie} id={movieData[index].id}/>
 
       })}
       </div>

@@ -1,28 +1,18 @@
 import './App.css';
 
+
 const Nav = () => {
 
     return(
 
-<nav>
-    <ul className="nav-list">
-      <li className="nav-item">
-        
-      </li>
-        
-      <li className="nav-item">
-       
-      </li> 
-      <li className="nav-item">
-      </li>
- 
-      <li className="nav-item">
-      
-      </li>
-    </ul>
-  </nav>
-       
-            
+    <nav>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <a href="/">Home</a>
+          </li>
+
+        </ul>
+      </nav>      
    
     );
 

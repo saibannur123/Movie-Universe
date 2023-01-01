@@ -74,6 +74,7 @@ html, body{
   margin-top:0;
   margin-bottom:0px;
   align-items: center;
+  text-align:center;
  
 }
 
@@ -133,4 +134,185 @@ opacity: 1;
   margin-bottom:0px;
   align-items: center;
  
+}
+
+#movieTitle{
+  color:white;
+ 
+  
+}
+#content-box{
+  padding-top:10px;
+ font-family: "verdana";
+  color:white;
+  text-align:left;
+  
+}
+
+#plotContent{
+  text-align:left;
+}
+
+div .rbr{
+  background: rgba(17, 17, 17, 0.6);
+ padding:5px;
+}
+
+#actor{
+  border-top:40px solid rgb(33, 32, 32);
+}
+#act-title{
+  font-family: "Verdana";
+  color:rgb(188, 162, 15);
+  margin-left:3%;
+  display:block;
+  
+}
+
+#actor-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width:185px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 2%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 2px;
+  
+}
+
+.realName{
+  text-align:center;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.charName{
+  text-align:center;
+  font-weight: normal;
+  font-size: 14px;
+
+}
+
+
+ .actor-img{
+  width:100%;
+  height:275px;
+}
+
+@media only screen and (min-width: 1000px) {
+    #movie-img{
+
+    float:left;
+    height:500px;
+
+    }
+
+    #movieboxer{
+    text-align:center;
+    background: rgba(0,0,0,.5);   
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:5%; 
+      
+    }
+    #content-box{
+      padding-left: 32%;
+    }
+
+    #budget, #run-time, #revenue{
+      margin-right: 30px;
+    }
+
+    #actor{
+      display:block;
+      background-color: rgb(132, 110, 110);
+      width: 80%;
+      margin: 0 auto;
+     
+    }
+ 
+  
+}
+@media only screen and (max-width: 1300px) {
+  .rbr{
+    display:inline-block;
+    margin-bottom: 3%;
+    margin-right:3%;
+  }
+}
+
+
+@media only screen and (max-width: 999px) {
+
+  #movieboxer{
+  text-align:center;
+  background: rgba(0,0,0,.5);
+  height: 100%;
+  padding:2%;
+  width: 70%;
+  margin: 0 auto;
+  margin-top:5%;
+  text-align:center;
+  display:block;
+  }
+
+  #actor{
+    display:block;
+    background-color: white;
+    width: 70%;
+    padding:2%;
+    margin: 0 auto;
+
+  }
+  #movie-img{
+
+    float:center;
+    height:500px;
+    
+    }
+    .rbr{
+      display:inline-block;
+      margin-bottom: 3%;
+    }
+
+
+
+}
+
+
+
+.genres span{
+  background-color: red;
+  width: 100%;
+}
+
+.genres{
+  display:inline;
+
+}
+
+.genPadd{
+  padding: 2px;
+  border-radius: 15%;
 }

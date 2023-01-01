@@ -1,7 +1,8 @@
 import './App.css';
-import Movie from "./movie";
+import  Home  from "./Home";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navigation from "./Nav";
-
+import MovieInfo from "./MovieInfo";
 
 function App() {
 
@@ -9,16 +10,16 @@ function App() {
   return (
     <>
     <Navigation />
-    
-    <Movie />
-    
-      <footer>     
-        <div className="footer-copyright">
-            <p>Copyright @ 2022 Sai Bannur</p>
-        </div>
-      </footer>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/:id" element={<MovieInfo/>}/>
+        <Route path="/error" element={<h1>Page Not Found</h1>}/>
+        <Route path="*" element={<h1>Page Not Found</h1>}/>
+      </Routes>
 
-  
+    </Router>
+      
     </>
   );
 }
