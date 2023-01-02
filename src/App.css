@@ -16,8 +16,9 @@ background-size: cover;
 }
 
 .indivMovie{
-  width: 75%;
-
+  max-width:252px;
+  max-height:389px;
+  width:70%;
 	
   margin: 8% 0% 8% 8%;
 	border: 3px solid black;
@@ -26,8 +27,38 @@ background-size: cover;
   
 }
 
+#home_title{
+  color:white;
+  text-align: center;
+  font-family: "Verdana";
+  margin: 3%;
+}
+#homez{
+  color:White;
+  text-align: center;
+  font-size: 300%;
+  font-family: "Verdana";
+  margin-bottom: 5%;
+}
+#search-bar{
+
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  margin-top: 30px;
+  outline:none;
+ 
+}
+
 .movieElement{
   width:90%;
+  -webkit-transition: 1s;
+-moz-transition: 1s;
+-o-transition: 1s;
+transition: 1s;
+opacity: 1;
 }
 
 footer{
