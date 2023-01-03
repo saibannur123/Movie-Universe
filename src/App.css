@@ -218,6 +218,9 @@ div .rbr{
   border:1px solid black;
   
 }
+#pageNum{
+  color:white;
+}
 .previous:hover {
   background-color: #ddd;
   color: black;

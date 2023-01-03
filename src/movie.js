@@ -25,6 +25,7 @@ function App() {
       nextPagez === 1 && setLatest2(res.data.results[0].backdrop_path);
       setTheTitle("Now Playing");
       setMaxPage(res.data.total_pages);
+      
     });
 
     if (searchData !== "") {
@@ -100,6 +101,7 @@ function App() {
             &#8250;
           </button>
         )}
+        <p id="pageNum">[{nextPagez} of {maxPage}]</p>
       </div>
     </div>
   );
