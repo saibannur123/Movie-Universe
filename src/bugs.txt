@@ -1,2 +1,0 @@
-1) 404 error
-2) When typing in junk url, ex: /1, causes error in console
