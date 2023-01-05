@@ -101,7 +101,7 @@ function App() {
             &#8250;
           </button>
         )}
-        <p id="pageNum">[{nextPagez} of {maxPage}]</p>
+        {maxPage !== 0 && <p id="pageNum">[{nextPagez} of {maxPage}]</p>}
       </div>
     </div>
   );
