@@ -13,3 +13,5 @@ Application Functionality:
 
 - Search through thousands of movies from various languages: using The Movie Database (TMDB) API
 - View movie details such as plot, revenue, genres, cast, etc
+
+
