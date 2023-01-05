@@ -2,5 +2,6 @@
 
 # Movie-Universe Web Application <br>
 https://movie-universe-339a9.web.app/
-<br>
+
+
 The first web application developed by me using react to browse movies from several different languages. 
