@@ -155,10 +155,6 @@ html, body{
   align-items:center;
   box-shadow:inset 0 0 0 1000px rgba(0,0,0,0.2);
   object-fit:contain;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
   opacity: 1;
   -webkit-filter: grayscale(100%);
  /* Safari 6.0 - 9.0 */
