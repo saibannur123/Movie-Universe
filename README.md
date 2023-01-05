@@ -9,7 +9,7 @@ The first web application developed by me using react to browse movies from seve
 Used:
 
 - create-react-app;
-- html, css, javascript
+- HTML, CSS, JavaScript
 
 Application Functionality:
 
