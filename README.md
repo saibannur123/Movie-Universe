@@ -8,3 +8,8 @@ The first web application developed by me using react to browse movies from seve
 
 - create-react-app;
 - html, css, javascript
+
+Application Functionality:
+
+- Search through thousands of movies from various languages: using The Movie Database (TMDB) API
+- View movie details such as plot, revenue, genres, cast, etc
